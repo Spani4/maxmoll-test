@@ -1,0 +1,15 @@
+doctype html
+html(lang="ru")
+
+    include ../head/head.pug
+     
+    body
+        include ../mixins/mixins.pug
+
+        include ../modules/header.pug
+        
+        block content
+        
+        include ../modules/footer.pug
+
+        include ../modules/front-navigation.pug

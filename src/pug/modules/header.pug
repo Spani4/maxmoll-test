@@ -1,0 +1,24 @@
+header
+    .container.py-3.border-bottom.border-gray-light
+            .row.justify-content-between.flex-nowrap
+
+                .col-auto.pl-0
+                    a(href="/", aria-label="На главную")
+                        img(data-src=require('~/images/logo.png'), alt="logo")
+
+                .col-auto
+                    include ../components/contacts.pug
+
+                .col-auto
+                    include ../components/cart-sum.pug
+
+
+                .col-auto
+                    button.button-callme.btn.btn-danger
+                        +icon('phone')
+                        span Перезвоните мне
+    
+    include ./nav.pug
+
+            
+    

@@ -1,0 +1,14 @@
+.nav {
+    
+    font-size: 12px;
+
+    &-item {
+        @include transition(color);
+        color: $secondary;
+    
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+

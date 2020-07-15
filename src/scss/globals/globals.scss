@@ -1,0 +1,42 @@
+@import "fonts";
+@import "var";
+@import "../functions/functions";
+@import "../bootstrap/bootstrap";
+@import "../mixins/mixins";
+@import "extensions";
+
+
+// @import "modules/header";
+@import "modules/nav";
+// @import "modules/footer";
+
+@import "components/icons";
+@import "components/contacts";
+@import "components/buttons";
+@import "components/link-social";
+@import "components/cart-sum";
+@import "components/dropdown";
+
+
+html {
+    font-size: $rem;
+}
+
+body {
+    @include flex(col);
+    position: relative;
+    min-height: 100vh;
+
+    &.fixed {
+        overflow: hidden;
+    }
+}
+
+main {
+    flex-grow: 1;
+}
+
+header,
+footer {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+}

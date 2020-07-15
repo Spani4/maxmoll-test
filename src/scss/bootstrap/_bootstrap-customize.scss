@@ -1,0 +1,64 @@
+// WIDTHS
+$container-max-widths: (sm: 576px,
+    md: 728px,
+    lg: 952px,
+    xl: 1160px,
+    xxl: 1240px
+) !default;
+
+
+// BREAKPOINTS
+$grid-breakpoints: (xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1300px
+);
+    
+
+// COLORS
+$blue: #162345;
+$red: #DA2328;
+$black: #131313;
+$white: #FFF;
+$dark: #4E4E4E;
+$gray: #B9B9B9;
+$light: #F6F6F6;
+
+        
+$theme-colors: (  
+    "secondary": $dark,
+    "black": $black,
+    "dark": $dark,
+    "gray": $gray,
+    "gray-light": rgba($dark, .2),
+    "light": $light,
+    "white": $white,
+);
+
+
+// FONTS
+$font-family-sans-serif: "Montserrat", sans-serif;
+
+// HEADINGS
+$h1-font-size: 54px;
+$h2-font-size: 42px;
+$h3-font-size: 20px;
+
+// BUTTONS
+$border-radius: .25rem !default;
+
+// LINKS
+$link-color: inherit;
+$link-decoration: none;
+$link-hover-color: inherit;
+$link-hover-decoration: none;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 7% !default;
+
+
+// GUTTER
+// $grid-gutter-width: 40px;
+
+
