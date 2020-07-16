@@ -2,6 +2,7 @@ import '../lib/icons';
 import LazyLoad from "vanilla-lazyload";
 
 import initScrollToTopBtn from '~/js/components/scrollToTopBtn';
+import CityPicker from '~/vue/CityPicker';
 
 
 function initFooterYearUpdate() {
@@ -20,4 +21,5 @@ export default function() {
     initFooterYearUpdate();
     initScrollToTopBtn();
 
+    new CityPicker();
 }

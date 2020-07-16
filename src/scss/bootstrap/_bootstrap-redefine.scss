@@ -1,3 +1,8 @@
 .container {
     min-width: 1240px;
 }
+
+.modal {
+    display: block;
+    background-color: rgba($light, .5);
+}
