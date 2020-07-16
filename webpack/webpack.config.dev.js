@@ -15,7 +15,7 @@ module.exports = merge(common, {
         // host: "192.168.0.144",
         inline : true,
         overlay: {
-            warnings: true,
+            // warnings: true,
             errors  : true
         },
         open: "Chrome",

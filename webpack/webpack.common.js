@@ -45,7 +45,7 @@ module.exports = {
     plugins     : [
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
-            { from: 'src/images/raw', to: IMG_PATH },
+            // { from: 'src/images/raw', to: IMG_PATH },
             { from: 'src/images/favicons', to: FAVICONS_PATH }
         ]), 
         new SpriteLoaderPlugin({

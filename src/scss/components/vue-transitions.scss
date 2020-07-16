@@ -1,0 +1,16 @@
+.cities-enter {
+    opacity: 0;
+    transform: translateY(-3rem);
+}
+.cities-enter-active {
+    transition: all .4s;
+}
+.cities-leave-active {
+    transition: all .15s;
+}
+.cities-enter-to {
+    opacity: 1;
+}
+.cities-leave-to  {
+    opacity: 0;
+}

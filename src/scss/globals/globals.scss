@@ -16,6 +16,7 @@
 @import "components/link-social";
 @import "components/cart-sum";
 @import "components/dropdown";
+@import "components/vue-transitions";
 
 
 html {
@@ -26,10 +27,6 @@ body {
     @include flex(col);
     position: relative;
     min-height: 100vh;
-
-    &.fixed {
-        overflow: hidden;
-    }
 }
 
 main {
