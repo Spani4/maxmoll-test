@@ -1,14 +1,17 @@
 .nav {
     
     font-size: 12px;
-
-    &-item {
-        @include transition(color);
-        color: $secondary;
+    font-weight: 500;
     
-        &:hover {
-            color: $primary;
-        }
+    &-link {
+        @include transition(color); 
+    }
+
+    &.text-secondary &-item:hover > &-link {
+        color: $primary;
+    }
+    &.text-white &-item:hover > &-link {
+        color: $gray;
     }
 }
 

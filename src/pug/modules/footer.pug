@@ -3,10 +3,13 @@ footer
     .py-3
         include ./nav.pug
 
-    .container.py-4.border-top.border-gray-light
-        .row.justify-content-between.flex-nowrap
+    .container
 
-            .col-auto.pl-0
+        hr.w-100.my-0
+        
+        .row.py-4.justify-content-between.flex-nowrap
+
+            .col-auto
                 a(href="/", aria-label="На главную")
                     img(data-src=require('~/images/logo.png'), alt="logo")
 
@@ -26,6 +29,41 @@ footer
                 button.button-callme.btn.btn-danger
                     +icon('phone')
                     span Перезвоните мне
+
+            
+    .bg-darker.text-gray.small
+
+        .container
+            .row.py-3.align-items-center
+                .col-5.offset-1 ООО Третья планета ИНН 7017448330 ОГРН 1187031063053
+                .col-6.nav.justify-content-between.text-white
+                        .nav-item
+                            a.nav-link(href="#") Возврат и обмен
+                        .nav-item
+                            a.nav-link(href="#") Гарантии
+                        .nav-item
+                            a.nav-link(href="#") Политика конфиденциальности
+                        .nav-item
+                            a.nav-link(href="#") Карта сайта
+
+    .bg-black.text-gray.small
+        .container
+            .row.py-2
+                .col-12.text-center Все права защищены 
+                    a.text-white(href="/") #[em #[u regcam.ru]]&nbsp;
+                    |  
+                    span.js-year
+                    span &nbsp;&copy;
+
+    .button-scroll-top-container
+        .container
+            button.button-scroll-top.js-scroll-top-btn
+                +icon('arr-up')
+
+
+
+    
+
     
 
         

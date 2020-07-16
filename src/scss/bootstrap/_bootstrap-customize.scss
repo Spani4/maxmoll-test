@@ -21,6 +21,7 @@ $grid-breakpoints: (xs: 0,
 $blue: #162345;
 $red: #DA2328;
 $black: #131313;
+$darker: #1F1F1F;
 $white: #FFF;
 $dark: #4E4E4E;
 $gray: #B9B9B9;
@@ -29,6 +30,7 @@ $light: #F6F6F6;
         
 $theme-colors: (  
     "secondary": $dark,
+    "darker": $darker,
     "black": $black,
     "dark": $dark,
     "gray": $gray,
@@ -47,7 +49,7 @@ $h2-font-size: 42px;
 $h3-font-size: 20px;
 
 // BUTTONS
-$border-radius: .25rem !default;
+$border-radius: 10px;
 
 // LINKS
 $link-color: inherit;
