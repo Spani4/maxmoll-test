@@ -2,11 +2,6 @@
     const tabs = require('~/pug/data/usage-tabs')
 
 section.usage.js-tabs-usage
-    .decor-elems
-        .container.position-relative
-            +icon('decor-elem-dots-rows')
-            +icon('decor-elem-dots-matrix')
-            +icon('decor-elem-wavy')
     .container
         .row
             .col-6
@@ -39,3 +34,6 @@ section.usage.js-tabs-usage
                 .usage__image-rotate
                     .usage__image-rotate-text 360&deg;
                     +icon('rotate')
+
+    include ../components/decor-elems.pug
+

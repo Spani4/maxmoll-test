@@ -1,6 +1,9 @@
 .decor-elems {
 
     overflow: visible;
+    position: absolute;
+    width: 0;
+    left: 50%;
 
     .decor-elem {
 
@@ -8,30 +11,31 @@
         &-dots-matrix,
         &-wavy {
             position: absolute;
+            z-index: 100;
             stroke: $black;
             fill: transparent;
         }
 
+        &-wavy {
+            width: 60px;
+            min-height: 50px;
+            height: 50px;
+            left: 600px;
+            top: 0;
+        }
         &-dots-rows {
             width: 100px;
             min-height: 20px;
             height: 20px;
-            left: -12%;
-            top: 250px;
+            left: -800px;
+            top: 190px;
         }
         &-dots-matrix {
             width: 60px;
             min-height: 60px;
             height: 60px;
-            right: -15%;
-            top: 400px;
-        }
-        &-wavy {
-            width: 60px;
-            min-height: 50px;
-            height: 50px;
-            right: -5%;
-            top: 50px;
+            left: 680px;
+            top: 356px;
         }
     }
 }

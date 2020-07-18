@@ -1,6 +1,12 @@
 .product-tabs {
 
+    position: relative;
+    overflow: hidden;
     margin-bottom: 60px;
+
+    .decor-elems {
+        top: 20%;
+    }
 
     &__tabs {
         margin-bottom: 60px;

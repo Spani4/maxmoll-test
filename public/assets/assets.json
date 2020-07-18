@@ -1,0 +1,24 @@
+{
+  "index": {
+    "js": [
+      "/assets/js/1.050b9ff7.chunk.js",
+      "/assets/js/0.a0e7f7f0.chunk.js",
+      "/assets/js/index.56c5911c.js"
+    ],
+    "css": [
+      "/assets/css/0.a0e7f7f0.css",
+      "/assets/css/index.56c5911c.css"
+    ]
+  },
+  "product": {
+    "js": [
+      "/assets/js/1.050b9ff7.chunk.js",
+      "/assets/js/0.a0e7f7f0.chunk.js",
+      "/assets/js/product.c13a2824.js"
+    ],
+    "css": [
+      "/assets/css/0.a0e7f7f0.css",
+      "/assets/css/product.c13a2824.css"
+    ]
+  }
+}
