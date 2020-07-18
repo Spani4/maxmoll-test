@@ -1,6 +1,6 @@
 <template lang="pug">
 
-transition(name="cities")
+transition(name="modal")
     .modal(v-if="$root.show")
         .modal-dialog.shadow-lg.modal-lg
             .modal-content
@@ -69,7 +69,7 @@ export default {
 
     created() {
         this.renderCityName();
-    }
+    },
 }
 </script>
 

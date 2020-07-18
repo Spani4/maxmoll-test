@@ -1,0 +1,20 @@
+.product-teaser
+    .product-teaser__shields
+        .product-teaser__shields-item.bg-danger
+            .product-teaser__shields-text -50%
+        .product-teaser__shields-item.bg-primary
+            .product-teaser__shields-text ХИТ!
+        .product-teaser__shields-item.bg-info
+            .product-teaser__shields-text NEW
+
+    .product-teaser__image(data-bg=`url(${require('~/images/product-teaser-image.png')})`)
+    .product-teaser__title Название товара “Самая лучшая камера”
+    .product-teaser__price
+        span.product-teaser__price-old 15050&nbsp;&#x20bd;
+        span.product-teaser__price-new 13350&nbsp;&#x20bd;
+    .product-teaser__buy
+        .btn-group.w-100
+            button.btn.btn-outline-primary Купить в 1 клик
+            button.button-cart.btn.btn-primary
+                +icon('cart').mr-2.pb-1
+                span Купить            

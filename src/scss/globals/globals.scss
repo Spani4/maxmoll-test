@@ -6,16 +6,17 @@
 @import "extensions";
 
 
-// @import "modules/header";
 @import "modules/nav";
-// @import "modules/footer";
 
 @import "components/icons";
 @import "components/contacts";
 @import "components/buttons";
+@import "components/forms";
 @import "components/link-social";
 @import "components/cart-sum";
 @import "components/dropdown";
+@import "components/tabs";
+@import "components/decor-elems";
 @import "components/vue-transitions";
 
 
@@ -28,6 +29,7 @@ body {
     @include flex(col);
     position: relative;
     min-height: 100vh;
+    overflow-y: overlay;
 }
 
 main {

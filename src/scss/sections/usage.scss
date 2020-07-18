@@ -1,0 +1,133 @@
+.usage {
+
+    padding: 80px 0;
+    overflow-x: hidden;
+    color: $dark;
+
+    &__heading {
+        font-family: "Roboto Condensed", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+    }
+
+    &__tabs {
+        width: 350px;
+        margin-bottom: 40px;
+    }
+
+    .usage__contents {
+
+        position: relative;
+        overflow: hidden;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 20px;
+        }
+
+        &::before {
+            top: 0;
+            background-image: linear-gradient(to bottom, $white, rgba($white, 0));
+        }
+        &::after {
+            bottom: 0;
+            background: linear-gradient(to top, $white, rgba($white, 0));
+        }
+    }
+
+    &__list {
+
+        display: none;
+        max-height: 350px;
+        padding: 10px 0;
+        overflow: auto;
+
+        &.active {
+            display: block;
+        }
+
+        &::-webkit-scrollbar {
+            width: 4px;
+            border-radius: 10px;
+            background-color: $gray;
+        }
+
+        &::-webkit-scrollbar-track {
+            border: 1px solid $white;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $danger;
+            width: 4px;
+            border-radius: 6px;
+        }
+
+        &-item {
+            @include flex();
+
+            margin-bottom: 20px;
+
+            &-number {
+                $size: 50px;
+
+                width: $size;
+                min-width: $size;
+                height: $size;
+                margin-right: 25px;
+                border-radius: 50%;
+
+                font-size: 20px;
+                font-weight: 600;
+                line-height: $size;
+                text-align: center;
+
+                box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.05);
+            }
+
+            &-content {
+                padding-top: 14px;
+            }
+        }
+    }
+
+    
+    &__image {
+
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &-rotate {
+            $width: 160px;
+            $height: 45px;
+            
+            position: absolute;
+            width: $width;
+            height: $height;
+            left: calc(50% - #{$width}/2);
+            bottom: 2rem;
+
+            &-text {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: $height * 0.9;
+                text-align: center;
+            }
+
+            .icon {
+                position: absolute;
+                top: 0;
+                stroke: $primary;
+                fill: transparent;
+            }
+        }
+    }
+
+
+
+}

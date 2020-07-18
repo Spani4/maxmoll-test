@@ -2,7 +2,6 @@
     input(
         type="text"
         :placeholder="placeholder"
-        :class="{ error: isError, required: isRequired }"
         :disabled="isDisabled"
         v-imask="mask"
         :value="value"
@@ -21,21 +20,13 @@ export default {
     name: 'PhoneInput',
 
     props: {
-        isError: {
-            type: Boolean,
-            default: false,
-        },
-        isRequired: {
-            type: Boolean,
-            default: false,
-        },
         isDisabled: {
             type: Boolean,
             default: false,
         },
         placeholder: {
             type: String,
-            default: "Логин (Мобильный телефон)"
+            default: "+7 (_ _ _) _ _ _-_ _-_ _"
         },
     },
 

@@ -1,0 +1,34 @@
+.product-buy-block
+
+    h1.product-buy-block__title Название товара “Самая лучшая камера”
+
+    #product-counter
+
+    .row.mb-3
+        .col
+            button.button-cart.btn.btn-primary.w-100.py-3
+                +icon('cart').mr-2.pb-1
+                span В корзину
+
+        .col
+            button.btn.btn-outline-primary.w-100.py-3 Купить в один клик
+            
+    .row.product-buy-block__options
+        .col
+            .product-buy-block__options-glyph
+                +icon('map-pin')
+            .mb-2 В наличии:
+            .small г. Петропавловск-Камчасткий: ул.&nbsp;Ленина&nbsp;12
+        .col
+            .product-buy-block__options-glyph
+                +icon('wallet')
+            .mb-2 Способы оплаты
+            ul.small.p-0
+                li Оплата при получении
+                li Безналичный расчет
+                li По счету для юр. лиц
+        .col
+            .product-buy-block__options-glyph
+                +icon('share')
+            .mb-2 Поделиться:
+            .text-sm

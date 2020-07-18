@@ -1,0 +1,25 @@
+.product-tabs {
+
+    margin-bottom: 60px;
+
+    &__tabs {
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        margin-bottom: 2.4rem;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__text {
+        line-height: 162%;
+    }
+
+    &__contents-item {
+
+        &:not(.active) {
+            display: none;
+        }
+    }
+}

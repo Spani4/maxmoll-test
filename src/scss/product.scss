@@ -1,0 +1,17 @@
+@import "globals/globals";
+
+@import "sections/product-tabs";
+@import "sections/relevant";
+
+@import "components/breadcrumbs";
+@import "components/product-slider";
+@import "components/product-buy-block";
+@import "components/product-reviews";
+;
+
+.product {
+
+    &__main {
+        margin-bottom: 80px;
+    }
+}

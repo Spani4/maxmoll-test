@@ -1,0 +1,15 @@
+.product-slider.bg-white.position-relative
+
+    .product-slider__controls.w-100.position-absolute.px-3
+        button.slider-btn.prev
+            +icon('arr-left')
+        button.slider-btn.next
+            +icon('arr-right')
+    
+    .product-slider__slide
+        .product-slider__image(data-bg=`url(${require('~/images/product-image.png')})`)
+        .product-slider__counter
+            span.product-slider__counter-current 01
+            span &nbsp;/
+            span.product-slider__counter-total 05
+

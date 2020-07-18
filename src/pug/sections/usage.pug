@@ -1,0 +1,41 @@
+- 
+    const tabs = require('~/pug/data/usage-tabs')
+
+section.usage.js-tabs-usage
+    .decor-elems
+        .container.position-relative
+            +icon('decor-elem-dots-rows')
+            +icon('decor-elem-dots-matrix')
+            +icon('decor-elem-wavy')
+    .container
+        .row
+            .col-6
+                .usage__heading.mb-4
+                    h2.h2 кто и для чего применяют
+                        br
+                        b персональные регистраторы?  
+
+                .usage__tabs.tabs
+                    .nav.nav-pills.shadow.rounded-lg
+                        .nav-item.w-50
+                            .nav-link.primary.active.js-tab-btn Кто?
+                        .nav-item.w-50
+                            .nav-link.danger.js-tab-btn Для чего?
+
+                .usage__contents
+                    .usage__list.active.js-tab-content
+                        each item in tabs.who
+                            .usage__list-item
+                                .usage__list-item-number= item.number
+                                .usage__list-item-content= item.text
+                    .usage__list.js-tab-content
+                        each item in tabs.forWhat
+                            .usage__list-item
+                                .usage__list-item-number= item.number
+                                .usage__list-item-content= item.text
+                    
+            .col-6.usage__image
+                img(data-src=require('~/images/registrator.png') alt="Registrator")
+                .usage__image-rotate
+                    .usage__image-rotate-text 360&deg;
+                    +icon('rotate')

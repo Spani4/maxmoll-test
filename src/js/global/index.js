@@ -3,6 +3,7 @@ import LazyLoad from "vanilla-lazyload";
 
 import initScrollToTopBtn from '~/js/components/scrollToTopBtn';
 import CityPicker from '~/vue/CityPicker';
+import CallRequest from '~/vue/CallRequest';
 
 
 function initFooterYearUpdate() {
@@ -22,4 +23,5 @@ export default function() {
     initScrollToTopBtn();
 
     new CityPicker();
+    new CallRequest();
 }

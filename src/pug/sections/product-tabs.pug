@@ -1,0 +1,32 @@
+section.product-tabs.js-tabs-product
+    .product-tabs__tabs.container
+        .row.tabs
+            .col
+                .nav.nav-pills.shadow.rounded-lg.bg-white
+                    .nav-item.w-25
+                        .nav-link.active.js-tab-btn Описание
+                    .nav-item.w-25
+                        .nav-link.js-tab-btn Характеристики
+                    .nav-item.w-25
+                        .nav-link.js-tab-btn Отзывы
+                    .nav-item.w-25
+                        .nav-link.js-tab-btn Вопрос-ответ
+    
+    .product-tabs__contents.container
+        .row
+            .col-8.offset-2
+
+                .product-tabs__contents-item.active.js-tab-content
+                    .product-tabs__title Описания для самой лучшей камеры
+                    .product-tabs__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nulla tortor volutpat, venenatis, neque pulvinar nunc leo bibendum. Eu feugiat vulputate id libero velit purus tortor. Montes, nullam elementum ullamcorper volutpat eros, aenean vitae nisi feugiat. Amet, pellentesque quis ultrices nisl et vehicula mi. Duis consectetur in bibendum amet, dolor luctus. Velit porta elit ut aenean volutpat scelerisque massa aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor nulla tortor volutpat, venenatis, neque pulvinar nunc leo bibendum. Eu feugiat vulputate id libero velit purus tortor. Montes, nullam elementum ullamcorper volutpat eros, aenean vitae nisi feugiat. Amet, pellentesque quis ultrices nisl et vehicula mi. Duis consectetur in bibendum amet, dolor luctus. Velit porta elit ut aenean volutpat scelerisque massa aliquam.
+               
+                .product-tabs__contents-item.js-tab-content
+                    .product-tabs__title Характеристики самой лучшей камеры
+
+                .product-tabs__contents-item.js-tab-content
+                    include ../components/product-reviews.pug
+
+                .product-tabs__contents-item.js-tab-content
+                    .product-tabs__title Вопрос-ответ
+
+                    

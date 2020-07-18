@@ -1,16 +1,19 @@
-.cities-enter {
+.modal-enter > * {
     opacity: 0;
-    transform: translateY(-3rem);
+    transform: translateY(-3rem);  
 }
-.cities-enter-active {
+.modal-enter-active,
+.modal-enter-active > * {
     transition: all .4s;
 }
-.cities-leave-active {
-    transition: all .15s;
+.modal-leave-active,
+.modal-leave-active > * {
+    transition: all .2s;
 }
-.cities-enter-to {
+.modal-enter-to,
+.modal-enter-to > * {
     opacity: 1;
 }
-.cities-leave-to  {
+.modal-leave-to {
     opacity: 0;
 }
