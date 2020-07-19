@@ -1,7 +1,5 @@
 .button {
 
-    @include transition(all);
-
     &-callme.btn {
         height: 45px;
         font-size: 12px;
